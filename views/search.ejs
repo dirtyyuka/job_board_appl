@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="/css/search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <%- include('partials/nav', { locals: { user: user} }) %>
+  <h1>Search Results</h1>
+  <div class="jobs">
+    <% for (let job of jobs) { %>
+      <div class="job">
+        <h2><%= job.title %></h2>
+        <p><%= job.description %></p>
+        <div class="labels">
+          <p><span class="fas fa-map-marker-alt"></span><%= job.location %></p>
+          <p><span class="fas fa-dollar-sign"></span><%=job.salary%></p>
+        </div>
+        <a href="/apply/jobs/<%= job.id %>">
+          <button class="apply">Apply</button>
+        </a>
+      </div>
+    <% } %>
+  </div>
+</body>
+</html>

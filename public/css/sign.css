@@ -1,0 +1,55 @@
+@import "globals.css";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;  
+}
+
+.container {
+  gap: 1em;
+  padding: 2rem;
+  display: flex;
+  border-radius: 1em;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: var(--font-family-bold);
+}
+
+.input {
+  gap: 0.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.3em 0.1em   0.3em 0.1em;
+  font-size: 1em;
+  appearance: none;
+  border: 1px solid #696969;
+}
+
+button {
+  flex: 1;
+  width: 100px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  background-color: #696969;
+  font-family: var(--font-family);
+}
+
+.remember {
+  text-align: center;
+}
+

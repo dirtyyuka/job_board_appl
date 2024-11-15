@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply</title>
+  <link rel="stylesheet" href="/css/apply-job.css">
+</head>
+<body>
+  <%- include('partials/nav', { locals: { user: user} }) %>
+  <div class="container">
+    <h1>Apply</h1>
+    <div class="apply">
+      <div class="input-container">
+        <label for="pitch">Pitch</label>
+        <textarea name="pitch" id="pitch" cols="30" rows="10"></textarea>
+      </div>
+      <div class="salary-container">
+        <label for="salary">Salary</label>
+        <input type="number" name="salary" id="salary">
+      </div>
+      <button>Apply</button>
+    </div>
+  </div>
+  <script src="/js/apply-job.js"></script>
+</body>
+</html>

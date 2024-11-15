@@ -1,0 +1,64 @@
+@import './globals.css';
+
+.container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 5em;
+}
+
+h1 {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.input-container {
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.input-container textarea, input {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  font-family: var(--font-family);
+}
+
+.input-container textarea {
+  height: 10em;
+}
+
+.salary-container {
+  align-items: center;
+  flex-direction: row;
+}
+
+.salary-container label {
+  margin-right: 1em;
+}
+
+.salary-container #salary {
+  width: 6em;
+}
+
+button {
+  margin-top: 2em;
+  padding: 0.5em;  
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.alert {
+  color: rgb(105, 252, 76);
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #ffe6e6;  /* Light green background */
+  border: 1px solid rgb(105, 252, 76);
+  border-radius: 4px;
+}
+

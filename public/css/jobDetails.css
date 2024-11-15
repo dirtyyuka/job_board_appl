@@ -1,0 +1,37 @@
+@import './globals.css';
+
+h1 {
+  margin-top: 2em;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: var(--font-family-bold);
+}
+
+.applications {
+  min-height: 80vh;
+}
+
+.application {
+  margin: 0 5em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+  .application {
+    margin: 0 1em;
+  }
+}
+
+.no-applications {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-applications h2 {
+  font-size: 2rem;
+  font-family: var(--font-family-bold);
+}

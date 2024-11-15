@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Details</title>
+  <link rel="stylesheet" href="/css/jobDetails.css">
+</head>
+<body>
+  <%- include('partials/nav', { locals: { user: user} }) %>
+  <h1>Job Details</h1>
+  <% if (applications.length > 0) { %>
+  <div class="applications">
+    <% applications.forEach((application) => { %>
+      <div class="application">
+        <h2>Application</h2>
+        <p>Description: <%= application.description %></p>
+        <p>Salary: <%= application.salary %></p>
+      </div>
+      <% }); %>
+    </div>
+  <% } else { %>
+    <div class="no-applications">
+      <h2>No Applications</h2>
+    </div>
+  <% } %>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@import './globals.css';
+
+.container {
+  margin: 0 5em;
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 1em;
+  }
+}
+
+.container h1 {
+  margin-top: 1.5em;
+  text-align: center;
+  font-family: var(--font-family-bold);
+}
+
+.form {
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.salary {
+  align-items: center;
+  flex-direction: row;
+}
+
+.salary input {
+  width: 10em;
+}
+
+.input-container label {
+  font-family: var(--font-family-bold);
+}
+
+.input-container input,
+.input-container textarea {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  font-family: var(--font-family);
+}
+
+.input-container textarea {
+  height: 10em;
+}
+
+.tags-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.tags-input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+/* tag functionality */
+.tag {
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.tag span {
+  margin-right: 8px;
+}
+
+.tag .remove-tag {
+  cursor: pointer;
+  color: #888;
+  font-weight: bold;
+}
+
+.alert {
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #ffe6e6;  /* Light red background */
+  border: 1px solid rgb(255, 77, 77);
+  border-radius: 4px;
+}
+
+.submit {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  cursor: pointer;
+}

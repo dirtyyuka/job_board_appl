@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('/fonts/InterRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('/fonts/InterBold.woff') format('woff');
+}
+
+:root {
+  --font-family: 'Inter Regular', sans-serif;
+  --font-family-bold: 'Inter Bold', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
+
+nav {
+  background-color: #1a1a1a;
+}
+
+nav div {
+  margin: 0 5em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  nav div {
+    margin: 0 1em;
+    padding: 1em 0 1em 0;
+  }
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+nav ul {
+  gap: 1em;
+  display: flex;
+  margin: 0 1em;
+  list-style-type: none;
+}
